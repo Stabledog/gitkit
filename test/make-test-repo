@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# make-test-repo
+function errExit {
+	echo "ERROR: $@"
+	exit 1
+}
+
+if [[ -z $sourceMe ]]; then
+	if [[ ! -f make-test-repo ]]; then
+		errExit "Run this from the test/ directory"
+	fi
+	git init conflict1
+fi

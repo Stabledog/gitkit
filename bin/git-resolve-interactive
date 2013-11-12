@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# git-resolve-interactive
+
+# We need to find ourselves.  We tried drugs, but that
+# didn't work:
+[[ -z $GITKITHOME ]] && $GITKITHOME=$HOME/gitkit
+source $GITKITHOME/bin/gitkit-utils 
+
+# Loop over the conflicted files:
+function runFileLoop {
+	
+}
+
+if [[ -z $sourceMe ]]; then
+	runFileLoop
+fi
